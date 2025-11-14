@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing page</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="styles/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
@@ -15,29 +15,34 @@
 
     <section class="menu">
         <a href="index.html">
-            <img src="assets/logo_store.png" alt="logo">
+            <img class="logo" src="assets/logo_store.png" alt="logo">
         </a>
 
-        <a href="Novidades">Novidades</a>
-        <a href="Sapatos">Sapatos</a>
-        <a href="Botas">Botas</a>
-        <a href="Tênis">Tênis</a>
-        <a href="Closet">Closet</a>
-        <a href="See all">See all</a>
-        <a href="Sale">Sale</a>
+        <div class="navbar">
+            <p>Novidades</p>
+            <p>Sapatos</p>
+            <p>Botas</p>
+            <p>Tênis</p>
+            <p>Closet</p>
+            <p>See all</p>
+            <p class="sale_red">Sale</p>
+        </div>
 
-        <a href="desktop.html">
+
+        <div class="menu-direita">
+
             <img src="assets/icons/lupa_search.png" alt="lupa_search">
             <p>Pesquisar</p>
-        </a>
 
-        <img src="assets/icons/icon.png" alt="login">
-        <p>Entrar</p>
+            <img src="assets/icons/icon.png" alt="login">
+            <p>Entrar</p>
 
-        <img src="" alt="carrinho de compras">
+            <img src="assets/icons/carrinho.png" alt="carrinho de compras">
+
+        </div>
     </section>
 
-    <img src="assets/banner1.png" alt="banner_silas_shoes">
+    <img class="banner_grande" src="assets/banner1.png" alt="banner_silas_shoes">
 
     <section class="banner_secondary">
         <img src="assets/imgs-second-banner/image1.png" alt="3 botas">
@@ -45,39 +50,41 @@
         <img src="assets/imgs-second-banner/image3.png" alt="bolsa">
     </section>
 
-    <section class="novidades">
-        <h2>Novidades</h2>
-        <div class="bloco_item">
-            <img src="assets/products/black_shoe.png" alt="tênis preto">
-            <p>Tênis preto casual</p>
-            <p>R$299,90</p>
-            <p>R$129,90</p>
-        </div>
+    <section class="itens">
+        <h1>Novidades</h1>
+        <section class="novidades">
+            <div class="bloco_item">
+                <img src="assets/products/black_shoe.png" alt="tênis preto">
+                <p>Tênis preto casual</p>
+                <p class="line_price">R$299,90</p>
+                <p>R$129,90</p>
+            </div>
 
-        <div class="bloco_item">
-            <img src="assets/products/black_shoe.png" alt="tênis preto">
-            <p>Tênis preto casual</p>
-            <p>R$299,90</p>
-            <p>R$129,90</p>
-        </div>
+            <div class="bloco_item">
+                <img src="assets/products/black_shoe.png" alt="tênis preto">
+                <p>Tênis preto casual</p>
+                <p class="line_price">R$299,90</p>
+                <p>R$129,90</p>
+            </div>
 
-        <div class="bloco_item">
-            <img src="assets/products/black_shoe.png" alt="tênis preto">
-            <p>Tênis preto casual</p>
-            <p>R$299,90</p>
-            <p>R$129,90</p>
-        </div>
+            <div class="bloco_item">
+                <img src="assets/products/black_shoe.png" alt="tênis preto">
+                <p>Tênis preto casual</p>
+                <p class="line_price">R$299,90</p>
+                <p>R$129,90</p>
+            </div>
 
-        <div class="bloco_item">
-            <img src="assets/products/black_shoe.png" alt="tênis preto">
-            <p>Tênis preto casual</p>
-            <p>R$299,90</p>
-            <p>R$129,90</p>
-        </div>
+            <div class="bloco_item">
+                <img src="assets/products/black_shoe.png" alt="tênis preto">
+                <p>Tênis preto casual</p>
+                <p class="line_price">R$299,90</p>
+                <p>R$129,90</p>
+            </div>
+        </section>
     </section>
 
     <section class="instagram">
-        <h2>Instagram</h2>
+        <h1>Instagram</h1>
         <img src="assets/products/black_boot.png" alt="bota preta">
         <img src="assets/products/white_shoe.png" alt="tênis branco">
         <img src="assets/products/clay_shoe.png" alt="salto alto nude">
