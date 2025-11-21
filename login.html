@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Produto</title>
-    <link rel="stylesheet" href="styles/produto.css">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles/login.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
@@ -19,12 +19,12 @@
         </a>
 
         <nav class="navbar">
-            <a href="novidades.html">Novidades</a>
-            <a href="sapatos.html">Sapatos</a>
-            <a href="botas.html">Botas</a>
-            <a href="tenis.html">Tênis</a>
-            <a href="closet.html">Closet</a>
-            <a href="see-all.html">See all</a>
+            <a href="novidades.html" class="color_white">Novidades</a>
+            <a href="sapatos.html" class="color_white">Sapatos</a>
+            <a href="botas.html" class="color_white">Botas</a>
+            <a href="tenis.html" class="color_white">Tênis</a>
+            <a href="closet.html" class="color_white">Closet</a>
+            <a href="see-all.html" class="color_white">See all</a>
             <a href="desktop.html" class="sale_red">Sale</a>
         </nav>
 
@@ -43,63 +43,60 @@
         </div>
     </section>
 
+    <section class="login">
+        <h2 id="login-title">Login</h2>
 
-    <main class="product-page">
-        <aside class="thumbs">
-            <button class="thumb_ativo">
-                <img src="assets/products/black_shoe_carrinho.png" alt="Miniatura 1">
-            </button>
-            <button class="thumb">
-                <img src="assets/products/black_shoe_carrinho.png" alt="Miniatura 2">
-            </button>
-            <button class="thumb">
-                <img src="assets/products/black_shoe_carrinho.png" alt="Miniatura 3">
-            </button>
-            <button class="thumb">
-                <img src="assets/products/black_shoe_carrinho.png" alt="Miniatura 4">
-            </button>
-        </aside>
-
-        <!-- Imagem principal -->
-        <section class="galeria">
-            <img class="foto_expandida" src="assets/products/black_shoe_carrinho.png" alt="Tênis preto casual">
-        </section>
-
-        <!-- Painel de informações -->
-        <section class="info">
-            <h1 class="title">Tênis preto casual</h1>
-
-            <div class="prices">
-                <span class="preco_ant">R$ 299,90</span>
-                
-                <span class="preco_novo">R$129,90</span>
+        <form class="forms-login" action="#" method="post" autocomplete="on" novalidate>
+            <div class="campos">
+                <label for="login-email">E-mail</label>
+                <input type="email" id="login-email" name="email" placeholder="seu@email.com" inputmode="email"
+                    autocomplete="email" required />
             </div>
 
-            <div class="sizes">
-                <button>33</button><button>34</button><button>35</button><button>36</button>
-                <button>37</button><button>38</button><button>39</button>
-                <button>40</button><button>41</button><button>42</button>
-                <button>43</button><button>44</button><button>45</button>
+            <div class="campos">
+                <label for="login-senha">Senha</label>
+                <input type="password" id="login-senha" name="senha" placeholder="Sua senha"
+                    autocomplete="current-password" required />
             </div>
 
-            <button class="buy">Comprar</button>
+            <button class="btn-entrar" type="submit">Entrar</button>
 
-            <div class="desc">
-                <h2>Descrição</h2>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, animi nesciunt ad
-                    iusto voluptas ab. Expedita nesciunt voluptatem quisquam explicabo? Accusamus facere,
-                    odit facilis doloremque totam molestias aspernatur quod numquam?
-                </p>
+            <p class="ajuda">
+                <a href="assets/imgs-second-banner/image2.png">Esqueci a senha</a>
+            </p>
+        </form>
+    </section>
+
+    <section class="cadatro">
+        <h2 id="cadastro-title">Cadastro</h2>
+
+        <form class="forms-cadastro" action="#" method="post" autocomplete="on" novalidate>
+            <div class="campos">
+                <label for="cad-email">E-mail</label>
+                <input type="email" id="cad-email" name="email" placeholder="seu@email.com" inputmode="email"
+                    autocomplete="email" required />
             </div>
-        </section>
 
-    </main>
+            <div class="campos">
+                <label for="cad-nome">Nome</label>
+                <input type="text" id="cad-nome" name="nome" placeholder="ex.: Vinícius" autocomplete="name" required />
+            </div>
 
+            <div class="campos">
+                <label for="cad-senha">Senha</label>
+                <input type="password" id="cad-senha" name="senha" placeholder="Sua senha" autocomplete="new-password"
+                    minlength="6" required />
+            </div>
 
+            <div class="campos">
+                <label for="cad-confirma">Confirme sua senha</label>
+                <input type="password" id="cad-confirma" name="confirma_senha" placeholder="Sua senha"
+                    autocomplete="new-password" minlength="6" required />
+            </div>
 
-
-
+            <button class="btn-cadastrar" type="submit">Cadastrar</button>
+        </form>
+    </section>
     <footer>
         <img class="logo_2" src="assets/logo_store.png" alt="logo">
 
@@ -153,6 +150,7 @@
             avenida alameda estrada, 1234, São leopoldo. rs CEP: 12345-678 | CNPJ: 01.234.567/0089-10</p>
 
     </footer>
+
 </body>
 
 </html>

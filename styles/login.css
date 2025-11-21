@@ -76,129 +76,72 @@
   display:block;
 }
 
-.banner_borda{
-  display: flex;
-  justify-content: center; /* eixo horizontal */
-  align-items: center;     /* eixo vertical */
-  padding-top: 1%;
-  padding-left: 2%;
-  width: 98%;
+.login, .cadatro{
+  float:left;
+  width:40%;
+  min-width:420px;
+  padding:24px 0 80px;
 }
 
+.login{ margin-left:18%; }
+.cadatro{ margin-left:4%; }
 
-.sidebar{
-  width: 260px;
-  float: left;
-  padding: 8px 12px 24px 0;
-  position:absolute;
-  top: 40%;
-  left: 1.5%;
-
+.login h2, .cadatro h2{
+  margin:16px 0 24px;
+  font-family:"Bebas Neue", Inter, sans-serif;
+  font-size:36px;
+  letter-spacing:.06em;
+  text-transform:uppercase;
 }
 
-.shoes{
-  margin-left: calc(260px + 32px);
-  display: grid;
-  grid-template-columns: repeat(4, minmax(190px, 1fr));
-  column-gap: 48px;
-  row-gap: 56px;
-  align-items: start;
-  padding-bottom: 48px;
+.forms-login, .forms-cadastro{ width:520px; max-width:100%; }
+
+.campos{ margin-bottom:18px; }
+.campos label{
+  display:block;
+  margin:0 0 8px;
+  font-size:14px;
+  color:var(--text);
+}
+.campos input{
+  width:100%;
+  height:44px;
+  border:1px solid var(--border);
+  background:#fff;
+  padding:0 12px;
+  font:400 14px/1 Inter, sans-serif;
+  color:#222;
 }
 
-.bloco_item{
-  text-align: left;
-  font-size: 14px;
+.btn-entrar, .btn-cadastrar{
+  width:100%;
+  height:44px;
+  background:var(--black);
+  color:#fff;
+  border:none;
+  font:700 14px/1 Inter, sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.06em;
+  cursor:pointer;
+  margin-top:6px;
 }
 
-.bloco_item img{
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: contain;
-  display: block;
-  margin-bottom: 8px;
+.ajuda{
+  margin-top:16px;
+  font-size:13px;
+  text-align:center;
 }
-
-.bloco_item p{
-  margin: 2px 0;
-  line-height: 1.3;
-  color: #1a1a1a;
+.ajuda a{
+  color:var(--muted);
+  text-decoration:none;
 }
+.ajuda a:hover{ text-decoration:underline; }
 
-.bloco_item p{
-  font-weight: 800;
-  text-transform: uppercase;
-  font-size: 13px;
-}
-
-.bloco_item p:nth-of-type(2){
-  color: #8c8c8c;
-  text-decoration: line-through;
-  font-size: 8px;
-}
-
-.bloco_item p:nth-of-type(3){
-  font-weight: 800;
-  font-size: 13px;
-}
-
-.sidebar > p{
-  margin: 4px 0 16px;
-  color: #8c8c8c;
-  font-size: 11px;
-  text-transform: uppercase;
-  letter-spacing: .02em;
-}
-
-.sidebar hr{
-  border: 0;
-  border-top: 1px solid #e7e7e7;
-  margin: 8px 0 12px;
-}
-
-.type_product > p,
-.size > p,
-.prices > p{
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 12px;
-  margin: 10px 0 4px;
-}
-
-.type_product label,
-.prices label{
-  display: block;
-  font-size: 12px;
-  color: #222;
-  margin: 6px 0;
-  cursor: pointer;
-}
-
-.type_product input,
-.prices input{
-  margin-right: 8px;
-}
-
-.size{
-  margin-top: 4px;
-}
-
-.size .box1{
-  display: inline-grid;
-  place-items: center;
-  width: 36px;
-  height: 36px;
-  border: 1px solid #d9d9d9;
-  font-size: 12px;
-  color: #222;
-  margin: 6px 6px 0 0;
-  cursor: pointer;
-  user-select: none;
-  transition: border-color .15s ease;
-}
-
-.size .box1:hover{
-  border-color: #000;
+/* limpar floats do layout de duas colunas */
+.login::after, .cadatro::after{
+  content:"";
+  display:block;
+  clear:both;
 }
 
 
@@ -307,7 +250,3 @@ footer > p:last-child{
   font-size: 12px;
   margin: 6px 0 0;
 }
-
-
-
-

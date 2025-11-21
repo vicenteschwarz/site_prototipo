@@ -25,58 +25,56 @@
 
 */
 
-.menu {
-    position: relative;
-    background-color: black;
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    color: aliceblue;
-    text-decoration: none;
-    letter-spacing: -2px;
-    padding-bottom: 5%;
+.menu{
+  background:#000;
+  color:#f0f8ff;
+  font-family:"Bebas Neue", sans-serif;
+  letter-spacing:-2px;
+  padding:14px 40px;
+  display:flex;
+  justify-content:space-between;
 }
 
-.navbar {
-    position: absolute;
-    padding-top: 02%;
-    padding-left: 4%;
-    display: flex;
-    gap: 35px;
-    /* Ajuste o valor conforme necessário */
-    margin-left: 10%;
+.menu .logo{
+  height:40px;
+  width:auto;
+  display:block;
 }
 
-.sale_red {
-    color: red;
+.navbar{
+  display:flex;
+  gap:35px;
+  padding-right: 42em;
+  padding-top: 0.5em;
 }
 
-.logo {
-    position: absolute;
-    /* Remove a imagem do fluxo normal do layout */
-    top: 30%;
-    /* Ajuste a posição vertical da imagem */
-    left: 3%;
-    /* Ajuste a posição horizontal da imagem */
+.navbar a{
+  color:#cfcfcf;
+  text-decoration:none;
+  font-weight:500;
 }
 
-.menu-direita {
-    display: flex;
-    position: absolute;
-    margin-left: 80%;
-    gap: 30px;
-    bottom: 40%;
+.navbar .sale_red{ color:#e60000; }
+
+.menu-direita{
+  display:flex;
+  align-items:center;
+  gap:28px;
 }
 
+.menu-direita a{
+  color:#cfcfcf;
+  text-decoration:none;
+  display:flex;
+  align-items:center;
+  gap:8px;
+  font-weight: 600;
+}
 
-
-.menu-direita img {
-    position: relative;
-    width: 5%;
-    height: 5%;
-    left: 5%;
-    top: 1%;
-
+.menu-direita img{
+  width:18px;
+  height:18px;
+  display:block;
 }
 
 :root {
