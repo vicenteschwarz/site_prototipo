@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho</title>
+    <link rel="stylesheet" href="styles/carrinho.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <section class="menu">
+        <a href="index.html">
+            <img class="logo" src="assets/logo_store.png" alt="logo">
+        </a>
+
+        <div class="navbar">
+            <p>Novidades</p>
+            <p>Sapatos</p>
+            <p>Botas</p>
+            <p>Tênis</p>
+            <p>Closet</p>
+            <p>See all</p>
+            <p class="sale_red">Sale</p>
+        </div>
+
+
+        <div class="menu-direita">
+
+            <img src="assets/icons/lupa_search.png" alt="lupa_search">
+            <p>Pesquisar</p>
+
+            <img src="assets/icons/icon.png" alt="login">
+            <p>Entrar</p>
+
+            <img src="assets/icons/carrinho.png" alt="carrinho de compras">
+
+        </div>
+    </section>
+
+    <main class="cart">
+
+        <header class="carrinho-titulo">
+            <h1>Carrinho</h1>
+        </header>
+
+        <section class="carrinho-lista">
+
+            <!-- Item 1 -->
+            <article class="carrinho-item">
+                <figure class="item-media">
+                    <img class="img_peq" src="assets/products/black_shoe_carrinho.png" alt="Tênis preto casual">
+                </figure>
+
+                <div class="item-infos">
+                    <h2 class="item-title">Tênis preto casual</h2>
+                    <p class="item-variant">Tamanho: <span>39</span></p>
+                </div>
+
+                <div class="item-price">
+                    <div class="price-old">R$ 299,90</div>
+                    <div class="price-current">R$ 129,90</div>
+                </div>
+
+                <div class="item-qty">
+                    <label for="qty-3" class="visually-hidden">Quantidade</label>
+                    <select id="qty-3" name="qty-3">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                    </select>
+                </div>
+
+                <button class="item-remove" type="button" aria-label="Remover item">x</button>
+            </article>
+
+            <!-- Item 2 -->
+            <article class="carrinho-item">
+                <figure class="item-media">
+                    <img class="img_peq" src="assets/products/black_shoe_carrinho.png" alt="Tênis preto casual">
+                </figure>
+
+                <div class="item-infos">
+                    <h2 class="item-title">Tênis preto casual</h2>
+                    <p class="item-variant">Tamanho: <span>39</span></p>
+                </div>
+
+                <div class="item-price">
+                    <div class="price-old">R$ 299,90</div>
+                    <div class="price-current">R$ 129,90</div>
+                </div>
+
+                <div class="item-qty">
+                    <label for="qty-3" class="visually-hidden">Quantidade</label>
+                    <select id="qty-3" name="qty-3">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                    </select>
+                </div>
+
+                <button class="item-remove" type="button" aria-label="Remover item">x</button>
+            </article>
+
+            <!-- Item 3 -->
+            <article class="carrinho-item">
+                <figure class="item-media">
+                    <img class="img_peq" src="assets/products/black_shoe_carrinho.png" alt="Tênis preto casual">
+                </figure>
+
+                <div class="item-infos">
+                    <h2 class="item-title">Tênis preto casual</h2>
+                    <p class="item-variant">Tamanho: <span>39</span></p>
+                </div>
+
+                <div class="item-price">
+                    <div class="price-old">R$ 299,90</div>
+                    <div class="price-current">R$ 129,90</div>
+                </div>
+
+                <div class="item-qty">
+                    <label for="qty-3" class="visually-hidden">Quantidade</label>
+                    <select id="qty-3" name="qty-3">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                    </select>
+                </div>
+
+                <button class="item-remove" type="button" aria-label="Remover item">x</button>
+            </article>
+
+        </section>
+
+        <aside class="valores_direita">
+            <h3>Total</h3>
+            <p class="total">R$ 567,89</p>
+            <button class="checkout" type="button">Concluir compra</button>
+        </aside>
+
+    </main>
+
+    <!-- Acessibilidade/Utilitário: classe para esconder rótulos visuais -->
+    <style>
+        .visually-hidden {
+            position: absolute !important;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0 0 0 0);
+            white-space: nowrap;
+            border: 0;
+        }
+    </style>
+
+
+
+
+    <footer>
+        <img class="logo_2" src="assets/logo_store.png" alt="logo">
+
+        <hr>
+
+        <!--/fonte bebas neue 400/-->
+
+        <div class="footer_block1">
+            <h4>Institucional</h4>
+            <p>Sobre a store</p>
+            <p>Investor Relations</p>
+            <p>Seja nosso Parceiro</p>
+            <p>Programa de Afiliados</p>
+            <p>Trabalhe Conosco</p>
+            <p>Marketplace store</p>
+            <p>Eventos</p>
+            <p>Dicas store</p>
+        </div>
+
+        <div class="footer_block1">
+            <h4>Ajuda</h4>
+            <p>Entrgas</p>
+            <p>Pagamentos</p>
+            <p>Devoluções</p>
+            <p>Arrependimento</p>
+            <p>Cancelamentos</p>
+            <p>Meus pedidos</p>
+        </div>
+
+        <div class="footer_block1">
+            <h4>Políticas</h4>
+            <p>Regulamentos</p>
+            <p>Política de privacidade</p>
+        </div>
+
+        <div class="footer_block1">
+            <h4>Central de Relacionamento</h4>
+            <p>Tire suas dúvidas</p>
+        </div>
+
+        <div class="socials">
+            <h3>Acompanhe as redes sociais</h3>
+            <img src="assets/socials/facebook.png" alt="facebook">
+            <img src="assets/socials/instagram.png" alt="instagram">
+            <img src="assets/socials/youtube.png" alt="youtube">
+        </div>
+
+        <hr>
+
+        <p>© 2025, shoes. Todos os direitos reservados. shoes Comércio de comercializações comerciais Ltda. | rua
+            avenida alameda estrada, 1234, São leopoldo. rs CEP: 12345-678 | CNPJ: 01.234.567/0089-10</p>
+
+    </footer>
+</body>
+
+</html>
