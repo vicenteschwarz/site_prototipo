@@ -63,11 +63,7 @@
   bottom: 40%;
 }
 
-.banner_grande{
-  display: flex;
-  width: 100%;
-  height: 100%;
-}
+
 
 .menu-direita img{
   position: relative;
@@ -76,6 +72,12 @@
   left: 5%;
   top: 1%;
 
+}
+
+.banner_grande{
+  display: flex;
+  width: 100%;
+  height: 100%;
 }
 
 .banner_secondary {
@@ -116,6 +118,8 @@
   justify-content: center;        
   align-items: center; 
   grid-template-columns: repeat(4, 1fr); 
+  padding-left: 12%;
+  padding-right: 10%;
 }
 
 .bloco_item {
@@ -130,19 +134,137 @@
 
 }
 
-.instagram img{
-  display: flex;                   /* Usando Flexbox */
-  justify-content: center;         /* Centraliza as imagens horizontalmente */
-  align-items: center; 
-}
 
-.instagram h1{
+.title_instagram{
   display: flex;                   
   justify-content: center;        
   align-items: center;            
   letter-spacing: -2px;
-  padding-top:5%;
-  padding-bottom: 2%;
+  padding-bottom:2em;
+  font-size: 1.2vw;
+  padding-top: 6em;
+}
+
+
+
+.instagram{
+  max-width: 1100px;        
+  display: grid;
+  grid-template-columns: repeat(3, minmax(240px, 1fr));
+  gap: 140px;                 
+  justify-items: center;   
+  padding-left: 23%;  
+  padding-bottom: 4em;
+}
+
+
+.instagram img{
+  width: 150%;               
+  object-fit: cover;         
+  display: block;               
+}       
+
+/* footer */
+
+footer{
+  background: #000;
+  color: #fff;
+  padding: 32px 24px 16px;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-auto-rows: auto;
+  gap: 24px;
+  letter-spacing: .02em;
+}
+
+/* Logo no topo */
+footer > img{
+  grid-column: 1 / -1;       /* ocupa a largura toda */
+  max-width: 220px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Linhas finas */
+footer > hr{
+  grid-column: 1 / -1;
+  border: 0;
+  border-top: 1px solid #262626;  /* cinza bem escuro */
+  margin: 8px 0 0;
+}
+
+/* Colunas de links */
+.footer_block1{
+  grid-column: span 2;       /* 4 colunas ocupam 8/12 */
+  min-width: 180px;
+  padding-left: 15%;
+}
+
+.footer_block1 h4{
+  font-family: "Bebas Neue", system-ui, -apple-system, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  margin: 8px 0 12px;
+  font-size: 20px;
+}
+
+.footer_block1 p{
+  margin: 6px 0;
+  color: #cfcfcf;
+  font-size: 14px;
+  line-height: 1.6;
+  cursor: pointer;
+}
+
+.footer_block1 p:hover{
+  color: #fff;
+}
+
+/* Bloco das redes à direita */
+.socials{
+  grid-column: 10 / -1;     /* ocupa as 3/4 últimas colunas */
+  justify-self: end;
+  text-align: center;
+}
+
+.socials h3{
+  font-family: "Bebas Neue", system-ui, -apple-system, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  margin: 8px 0 16px;
+  font-size: 20px;
+  white-space: nowrap;
+}
+
+.logo_2{
+  width: 9%;
+  height: auto;
+  display: flex;
+  padding-left: 2.5%;
+}
+
+.socials img{
+  width: 20%;
+  height: 20%;
+  object-fit: contain;
+  margin: 0 10px; 
+  border-radius: 50%;
+  padding: 6px;
+  display: inline-block;
+  transition: transform .15s ease;
+}
+.socials img:hover{ transform: scale(1.06); }
+
+/* Créditos finais */
+footer > p:last-child{
+  grid-column: 1 / -1;
+  text-align: center;
+  color: #9d9d9d;
+  font-size: 12px;
+  margin: 6px 0 0;
 }
 
 
