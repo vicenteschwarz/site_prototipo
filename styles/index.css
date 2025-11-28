@@ -2,8 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Inter", Arial, sans-serif;
+    font-family:'Bebas Neue';
     text-transform: uppercase;
+    font-size: 1vw;
+
     
 }
 
@@ -27,11 +29,11 @@
 .menu{
   background:#000;
   color:#f0f8ff;
-  font-family:"Bebas Neue", sans-serif;
-  letter-spacing:-2px;
+  font-family:'Bebas Neue';
   padding:14px 40px;
   display:flex;
   justify-content:space-between;
+  gap: 40px;
 }
 
 .menu .logo{
@@ -107,8 +109,9 @@
   display: flex;                   
   justify-content: center;        
   align-items: center;            
-  letter-spacing: -2px;
   padding-bottom:0%;
+  font-size: 1.8vw;
+  font-weight: 500;
 }
 
 .itens{
@@ -142,10 +145,10 @@
   display: flex;                   
   justify-content: center;        
   align-items: center;            
-  letter-spacing: -2px;
   padding-bottom:2em;
-  font-size: 1.2vw;
   padding-top: 6em;
+  font-size: 1.8vw;
+  font-weight: 500;
 }
 
 
@@ -272,4 +275,130 @@ footer > p:last-child{
 
 
 
+
+
+
+/* base para o toggler */
+.nav-toggle{ display:none; }
+
+/* ícone sandwich */
+.hamburger{
+  display:none;
+  width:28px; height:22px;
+  position:relative; cursor:pointer;
+}
+.hamburger span,
+.hamburger::before,
+.hamburger::after{
+  content:"";
+  position:absolute; left:0; right:0;
+  height:2px; background:#fff;
+  transition:.2s ease;
+}
+.hamburger::before{ top:0; }
+.hamburger span{ top:10px; }
+.hamburger::after{ bottom:0; }
+
+/* animação X quando aberto */
+.nav-toggle:checked + .hamburger::before{ transform:translateY(10px) rotate(45deg); }
+.nav-toggle:checked + .hamburger span{ opacity:0; }
+.nav-toggle:checked + .hamburger::after{ transform:translateY(-10px) rotate(-45deg); }
+
+/* gaveta móvel */
+.drawer{
+  display:none;                  /* só mostra no mobile */
+  position:fixed; z-index:9999;
+  top:56px; left:0; bottom:0;
+  width:75vw; max-width:340px;
+  background:#2f2f2f; color:#fff;
+  transform:translateX(-110%);
+  transition:transform .25s ease;
+  padding:14px 12px; overflow:auto;
+}
+.drawer a{
+  display:block;
+  padding:14px 6px;
+  color:#eaeaea; text-decoration:none;
+  border-bottom:1px solid rgba(255,255,255,.12);
+}
+.drawer a.sale_red{ color:#e60000; }
+
+/* backdrop */
+.scrim{
+  display:none;                  /* só no mobile */
+  position:fixed; inset:0;
+  background:rgba(0,0,0,.5);
+  opacity:0; pointer-events:none;
+  transition:opacity .25s ease;
+}
+
+/* quando abrir o menu */
+.nav-toggle:checked ~ .drawer{ transform:translateX(0); }
+.nav-toggle:checked ~ .scrim{ opacity:1; pointer-events:auto; }
+
+@media (max-width:768px){
+
+  /* topo */
+  .menu{
+    padding:10px 14px;
+    gap:16px;
+    position:sticky; top:0; z-index:1000;
+  }
+  .menu .logo{ height:28px; }
+  .navbar{ display:none; }             /* esconde menu horizontal */
+  .hamburger{ display:block; }         /* mostra ícone */
+  .drawer{ display:block; }            /* habilita gaveta */
+  .scrim{ display:block; }
+  .menu-direita{ gap:14px; }
+  .menu-direita span{ display:none; }  /* só ícones: Pesquisar/Entrar */
+
+  /* banner secundário fica mais compacto */
+  .banner_secondary{
+    gap:10px;
+    padding:8px 10px 0;
+  }
+  .banner_secondary img{ width:100%; height:auto; flex:1; }
+
+  /* títulos */
+  .itens h1,
+  .title_instagram{
+    font-size:24px;
+    letter-spacing:0;
+    padding-top:24px;
+  }
+
+  /* grade de produtos (novidades) — de 4 colunas para 2 */
+  .novidades{
+    grid-template-columns: repeat(2, minmax(140px, 1fr));
+    padding-left:6%;
+    padding-right:6%;
+    row-gap:28px;
+    column-gap:20px;
+  }
+
+  /* seção Instagram – 1 coluna, central */
+  .instagram{
+    grid-template-columns: 1fr;
+    gap:20px;
+    padding-left:0;
+    justify-items:center;
+  }
+  .instagram img{ width:92%; }
+
+  /* footer empilhado */
+  footer{
+    grid-template-columns: 1fr;
+    gap:16px;
+  }
+  .footer_block1{
+    grid-column:1 / -1;
+    padding-left:0;
+  }
+  .socials{
+    grid-column:1 / -1;
+    justify-self:start;
+    text-align:left;
+  }
+  .logo_2{ width:36%; padding-left:0; }
+}
 

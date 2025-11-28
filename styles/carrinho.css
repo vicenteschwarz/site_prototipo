@@ -2,15 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Inter", Arial, sans-serif;
+    font-family:'Bebas Neue';
     text-transform: uppercase;
+    font-size: 1vw;
 
+    
 }
 
-* p {
-
-    font-weight: bold;
-    /* Deixa o texto em negrito */
+* p{
+  
+  font-weight: bold; /* Deixa o texto em negrito */
 
 
 }
@@ -28,11 +29,11 @@
 .menu{
   background:#000;
   color:#f0f8ff;
-  font-family:"Bebas Neue", sans-serif;
-  letter-spacing:-2px;
+  font-family:'Bebas Neue';
   padding:14px 40px;
   display:flex;
   justify-content:space-between;
+  gap: 40px;
 }
 
 .menu .logo{
