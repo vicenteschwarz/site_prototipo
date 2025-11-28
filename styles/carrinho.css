@@ -96,10 +96,10 @@
 
 .carrinho-titulo h1 {
     margin: 0 0 16px;
-    font-family: "Bebas Neue", Inter, sans-serif;
+    font-family: "Bebas Neue";
     text-transform: uppercase;
-    letter-spacing: .06em;
-    font-size: 1.2vw
+    font-size: 1.3vw;
+    font-weight: 500;
 }
 
 .carrinho-lista {
@@ -129,16 +129,21 @@
 
 .item-infos .item-title {
     margin: 0 0 6px;
-    font-family: "Bebas Neue", Inter, sans-serif;
+    font-family: "Bebas Neue";
     text-transform: uppercase;
-    letter-spacing: .04em;
-    font-size: 18px;
+    font-size: 1vw;
+    font-weight: 500;
 }
 
 .item-infos .item-variant {
     margin: 0;
     color: var(--muted);
-    font-size: 12px;
+    font-size: 0.8vw;
+    font-weight: 500;
+}
+
+.item-variant span{
+    font-size: 0.8vw;
 }
 
 .item-price {
@@ -151,18 +156,19 @@
 .item-price .price-old {
     color: #a5a5a5;
     text-decoration: line-through;
-    font-size: 12px;
+    font-size: 0.7vw;
+    font-weight: 500;
 }
 
 .item-price .price-current {
-    font-weight: 700;
-    font-size: 18px;
+    font-size: 1vw;
+    font-weight: 500;
 }
 
 .item-qty select {
     width: 64px;
     height: 36px;
-    border: 1px solid #cfcfcf;
+    border: 1px solid #000000;
     background: #fff;
     font: 600 12px/1 Inter, sans-serif;
     color: var(--text);
